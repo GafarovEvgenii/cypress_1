@@ -4,10 +4,10 @@
   "description": "cypress_1",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run",
-    "testMobile" : "cypress run --env viewportWidth=390,viewportHeight=844",
-    "testHeaded" : "cypress run -b chrome --headed",
-    "testHeadedMobile" : "cypress open --env viewportWidth=390,viewportHeight=844"
+    "testChrome":"npx cypress run --browser chrome --headless",
+    "testFirefox": "npx cypress run --browser firefox --headless",
+    "testChromeMobile": "npx cypress run -b chrome --env viewportWidth=390,viewportHeight=844",
+    "testFirefoxMobile": "npx cypress run -b firefox --env viewportWidth=390,viewportHeight=844"
   },
   "author": "Evgeny Gafarov",
   "license": "ISC",
