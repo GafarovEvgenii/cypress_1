@@ -1,15 +1,15 @@
 {
   "name": "cypress",
   "version": "1.0.0",
-  "description": "Home Work",
+  "description": "cypress_1",
   "main": "index.js",
   "scripts": {
     "test": "cypress run",
     "testMobile" : "cypress run --env viewportWidth=390,viewportHeight=844",
-    "testHeaded" : "cypress open",
+    "testHeaded" : "cypress run -b chrome --headed",
     "testHeadedMobile" : "cypress open --env viewportWidth=390,viewportHeight=844"
   },
-  "author": "Andrey Gribanov",
+  "author": "Evgeny Gafarov",
   "license": "ISC",
   "dependencies": {
     "cypress": "^10.0.2"
